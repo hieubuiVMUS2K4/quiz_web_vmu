@@ -1,0 +1,194 @@
+/* Bootstrap Variable Overrides - Maritime Theme */
+
+// Import tokens first
+@import './tokens.css';
+
+// Color system overrides
+$primary: var(--primary);
+$secondary: var(--secondary);
+$success: var(--success);
+$info: var(--info);
+$warning: var(--warning);
+$danger: var(--danger);
+
+// Body styles
+$body-bg: var(--bg);
+$body-color: var(--text);
+
+// Links
+$link-color: var(--link);
+$link-hover-color: var(--link-hover);
+$link-decoration: none;
+
+// Border and radius
+$border-color: var(--border);
+$border-radius: 0.375rem;
+$border-radius-sm: 0.25rem;
+$border-radius-lg: 0.5rem;
+
+// Shadows
+$box-shadow: 0 0.125rem 0.25rem var(--card-shadow);
+$box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+$box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+
+// Typography
+$font-family-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+$font-size-base: 0.875rem; // 14px
+$line-height-base: 1.5;
+
+// Spacing
+$spacer: 1rem;
+
+// Components
+$component-active-color: var(--primary-contrast);
+$component-active-bg: var(--primary);
+
+// Forms
+$input-bg: var(--input-bg);
+$input-color: var(--input-text);
+$input-border-color: var(--input-border);
+$input-focus-border-color: var(--input-focus);
+$input-focus-box-shadow: 0 0 0 0.2rem rgba(79, 151, 201, 0.25);
+
+// Buttons
+$btn-padding-y: 0.5rem;
+$btn-padding-x: 1rem;
+$btn-font-weight: 500;
+$btn-focus-box-shadow: 0 0 0 0.2rem rgba(79, 151, 201, 0.25);
+
+// Cards
+$card-bg: var(--card-bg);
+$card-border-color: var(--card-border);
+$card-border-radius: $border-radius;
+$card-box-shadow: var(--box-shadow);
+
+// Tables
+$table-bg: var(--table-bg);
+$table-accent-bg: var(--table-stripe);
+$table-hover-bg: var(--table-hover);
+$table-border-color: var(--table-border);
+$table-striped-bg: var(--table-stripe);
+
+// Navbar
+$navbar-padding-y: 0.75rem;
+$navbar-brand-font-size: 1.125rem;
+$navbar-brand-font-weight: 600;
+
+// Alerts
+$alert-padding-y: 0.75rem;
+$alert-padding-x: 1rem;
+$alert-margin-bottom: 1rem;
+$alert-border-radius: $border-radius;
+$alert-border-width: 1px;
+
+// Badges
+$badge-font-size: 0.75em;
+$badge-font-weight: 500;
+$badge-padding-y: 0.25em;
+$badge-padding-x: 0.5em;
+$badge-border-radius: $border-radius-sm;
+
+// Modals
+$modal-content-bg: var(--modal-bg);
+$modal-backdrop-bg: var(--modal-overlay);
+$modal-backdrop-opacity: 1;
+
+// Dropdowns
+$dropdown-bg: var(--surface);
+$dropdown-border-color: var(--border);
+$dropdown-link-color: var(--text);
+$dropdown-link-hover-color: var(--text);
+$dropdown-link-hover-bg: var(--surface-hover);
+
+// Progress bars
+$progress-bg: var(--bg-muted);
+$progress-bar-bg: var(--primary);
+
+// List groups
+$list-group-bg: var(--surface);
+$list-group-border-color: var(--border);
+$list-group-hover-bg: var(--surface-hover);
+$list-group-active-color: var(--primary-contrast);
+$list-group-active-bg: var(--primary);
+
+// Pagination
+$pagination-color: var(--text);
+$pagination-bg: var(--surface);
+$pagination-border-color: var(--border);
+$pagination-hover-color: var(--text);
+$pagination-hover-bg: var(--surface-hover);
+$pagination-hover-border-color: var(--border);
+$pagination-active-color: var(--primary-contrast);
+$pagination-active-bg: var(--primary);
+$pagination-active-border-color: var(--primary);
+
+// Breadcrumbs
+$breadcrumb-bg: transparent;
+$breadcrumb-divider-color: var(--text-muted);
+$breadcrumb-active-color: var(--text-muted);
+
+// Tooltips
+$tooltip-bg: var(--gray-800);
+$tooltip-color: #FFFFFF;
+
+// Popovers
+$popover-bg: var(--surface);
+$popover-border-color: var(--border);
+$popover-header-bg: var(--bg-muted);
+$popover-body-color: var(--text);
+
+// Spinners
+$spinner-border-width: 0.2em;
+$spinner-border-width-sm: 0.15em;
+
+// Close button
+$btn-close-color: var(--text);
+$btn-close-opacity: 0.5;
+$btn-close-hover-opacity: 0.75;
+
+// Accordion
+$accordion-bg: var(--surface);
+$accordion-border-color: var(--border);
+$accordion-button-bg: var(--surface);
+$accordion-button-active-bg: var(--surface-hover);
+$accordion-button-active-color: var(--text);
+
+// Offcanvas
+$offcanvas-bg-color: var(--surface);
+$offcanvas-color: var(--text);
+$offcanvas-border-color: var(--border);
+
+// Custom CSS Properties for Runtime Theme Switching
+:root {
+  // Override Bootstrap's CSS variables with our semantic tokens
+  --bs-primary: var(--primary);
+  --bs-secondary: var(--secondary);
+  --bs-success: var(--success);
+  --bs-info: var(--info);
+  --bs-warning: var(--warning);
+  --bs-danger: var(--danger);
+  --bs-light: var(--bg-muted);
+  --bs-dark: var(--text);
+
+  --bs-primary-rgb: 79, 151, 201;
+  --bs-secondary-rgb: 218, 165, 32;
+  --bs-success-rgb: 46, 125, 50;
+  --bs-info-rgb: 14, 165, 233;
+  --bs-warning-rgb: 245, 158, 11;
+  --bs-danger-rgb: 220, 38, 38;
+
+  --bs-body-bg: var(--bg);
+  --bs-body-color: var(--text);
+  --bs-border-color: var(--border);
+  --bs-link-color: var(--link);
+  --bs-link-hover-color: var(--link-hover);
+}
+
+[data-theme="dark"] {
+  --bs-primary-rgb: 74, 151, 201;
+  --bs-secondary-rgb: 225, 187, 76;
+  --bs-success-rgb: 76, 175, 80;
+  --bs-info-rgb: 56, 189, 248;
+  --bs-warning-rgb: 255, 183, 77;
+  --bs-danger-rgb: 248, 113, 113;
+}

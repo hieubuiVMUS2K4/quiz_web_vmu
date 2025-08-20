@@ -1,0 +1,221 @@
+.study-sidebar {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  top: 60px; /* Offset để không che header */
+  width: 350px;
+  height: calc(100vh - 60px); /* Trừ đi chiều cao header */
+  overflow-y: auto; /* Cho phép cuộn trong sidebar */
+  z-index: 1000;
+  border-right: 1px solid #dee2e6;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.study-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.study-sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.study-sidebar::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.study-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* User Avatar - Fixed section */
+.user-section {
+  flex-shrink: 0;
+  margin-bottom: 1.5rem;
+}
+
+/* Carousel container */
+.sidebar-carousel {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel-item.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.carousel-item.prev {
+  transform: translateX(-100%);
+}
+
+.carousel-indicator {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+.indicator-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.indicator-dot.active {
+  background: #007bff;
+}
+
+.sidebar-card {
+  margin-bottom: 0;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: fit-content;
+}
+
+.sidebar-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.sidebar-card .card-header {
+  border-radius: 10px 10px 0 0 !important;
+  border-bottom: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-card .card-body {
+  border-radius: 0 0 10px 10px;
+}
+
+.user-avatar {
+  width: 70px;
+  height: 70px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  border: 3px solid white;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+}
+
+.stat-box {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 0.875rem;
+  text-align: center;
+  transition: background 0.2s ease;
+}
+
+.stat-box:hover {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.progress-bar-custom {
+  height: 10px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #e9ecef 0%, #e9ecef 100%);
+}
+
+.streak-container {
+  background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+  border: 1px solid #ffeaa7;
+  border-radius: 6px;
+  padding: 1.25rem;
+}
+
+.recommended-topic {
+  background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+  border: 1px solid #c3e6cb;
+  border-radius: 6px;
+  padding: 0.875rem;
+}
+
+.action-button {
+  border-radius: 6px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.action-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-primary.action-button:hover {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  border-color: #007bff;
+}
+
+.btn-outline-secondary.action-button:hover {
+  background: linear-gradient(135deg, #6c757d 0%, #545b62 100%);
+  border-color: #6c757d;
+}
+
+.alert-custom {
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.tip-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s ease;
+}
+
+.tip-item:last-child {
+  border-bottom: none;
+}
+
+.tip-item:hover {
+  background: rgba(0, 123, 255, 0.05);
+  border-radius: 3px;
+  padding-left: 0.4rem;
+}
+
+.card-header-gradient-primary {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+}
+
+.card-header-gradient-success {
+  background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+}
+
+.card-header-gradient-info {
+  background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+}
+
+.card-header-gradient-secondary {
+  background: linear-gradient(135deg, #6c757d 0%, #545b62 100%);
+}

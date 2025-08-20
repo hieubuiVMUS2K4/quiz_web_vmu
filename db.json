@@ -1,0 +1,1872 @@
+{
+  "departments": [
+    {
+      "id": 1,
+      "name": "Khoa Công nghệ thông tin"
+    },
+    {
+      "id": 2,
+      "name": "Khoa Điện tử viễn thông"
+    },
+    {
+      "id": 3,
+      "name": "Viện Cơ khí"
+    },
+    {
+      "id": 4,
+      "name": "Viện Môi trường"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "student1@example.com",
+      "name": "Sinh viên CNTT",
+      "password": "password",
+      "role": "user",
+      "departmentId": 1,
+      "studentId": "12345678"
+    },
+    {
+      "id": 2,
+      "email": "student2@example.com",
+      "name": "Sinh viên Điện tử",
+      "password": "password",
+      "role": "user",
+      "departmentId": 2,
+      "studentId": "12345679"
+    },
+    {
+      "id": 3,
+      "email": "admin@example.com",
+      "name": "Administrator",
+      "password": "adminpass",
+      "role": "admin"
+    }
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "title": "Chuyên đề Giáo dục chính trị",
+      "description": "Trang bị kiến thức chính trị, tư tưởng, đường lối chủ trương",
+      "totalQuestions": 40,
+      "timeLimit": 45,
+      "passScore": 80
+    },
+    {
+      "id": 2,
+      "title": "Chuyên đề Đào tạo",
+      "description": "Quy chế đào tạo, quyền và nghĩa vụ sinh viên",
+      "totalQuestions": 40,
+      "timeLimit": 45,
+      "passScore": 80
+    },
+    {
+      "id": 3,
+      "title": "Chuyên đề Công tác Đoàn - Hội và phong trào SV",
+      "description": "Kiến thức về tổ chức Đoàn - Hội, hoạt động phong trào sinh viên",
+      "totalQuestions": 40,
+      "timeLimit": 45,
+      "passScore": 80
+    },
+    {
+      "id": 4,
+      "title": "Chuyên đề Luật Giao thông đường bộ",
+      "description": "Kiến thức về luật giao thông đường bộ",
+      "totalQuestions": 40,
+      "timeLimit": 45,
+      "passScore": 80
+    },
+    {
+      "id": 5,
+      "title": "Chuyên đề Phòng cháy chữa cháy",
+      "description": "Trang bị kiến thức về phòng cháy chữa cháy và cứu nạn cứu hộ",
+      "totalQuestions": 40,
+      "timeLimit": 45,
+      "passScore": 80
+    },
+    {
+      "id": 6,
+      "title": "Chuyên đề Văn hóa học đường",
+      "description": "Xây dựng văn hóa học đường lành mạnh, thân thiện",
+      "totalQuestions": 40,
+      "timeLimit": 45,
+      "passScore": 80
+    },
+    {
+      "id": 7,
+      "title": "Chuyên đề 7: Kỹ năng sống cơ bản",
+      "description": "Kỹ năng giải quyết vấn đề, giao tiếp",
+      "totalQuestions": 40,
+      "timeLimit": 45,
+      "passScore": 80
+    },
+    {
+      "id": 8,
+      "title": "Chuyên đề 8: Môi trường và bảo vệ môi trường",
+      "description": "Những kiến thức cơ bản về môi trường",
+      "totalQuestions": 40,
+      "timeLimit": 45,
+      "passScore": 80
+    },
+    {
+      "id": 9,
+      "title": "Chuyên đề 9: Công nghệ và đổi mới sáng tạo",
+      "description": "Khuyến khích sáng tạo và ứng dụng công nghệ",
+      "totalQuestions": 40,
+      "timeLimit": 45,
+      "passScore": 80
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "topicId": 1,
+      "title": "Theo luật Phòng chống ma túy, chất ma túy được định nghĩa như thế nào",
+      "choices": [
+        "Là chất gây nghiện, chất hướng thần gây ảnh hưởng và tác động đến hệ thần kinh",
+        "Là chất gây nghiện, chất gây ảo giác tác động đến hệ thần kinh",
+        "Nâng cao ý thức tự giác phòng ngừa, đấu tranh với các hành vi vi phạm an ninh, an toàn trường học.",
+        "Là chất gây nghiện, chất hướng thần có nồng độ hoạt chất cao hơn nồng độ cho phép."
+      ],
+      "correct": null
+    },
+    {
+      "id": 2,
+      "topicId": 1,
+      "title": "Lạm phát bình quân 6 tháng đầu năm 2024 của Việt Nam được kiểm soát ở mức nào ?",
+      "choices": [
+        "4.08%",
+        "3.52%",
+        "3.62%.",
+        "3.72%"
+      ],
+      "correct": null
+    },
+    {
+      "id": 3,
+      "topicId": 1,
+      "title": "Theo luật Phòng chống ma túy, người sử dụng trái phép chất ma túy được định nghĩa thế nào?",
+      "choices": [
+        "Là người có hành vi sử dụng chất ma túy mà không được sự cho phép của người hoặc cơ quan chuyên môn có thẩm quyền và xét nghiệm chất ma túy trong cơ thể có kết quả dương tính.",
+        "Là người có hành vi sử dụng chất ma túy  và xét nghiệm chất ma túy trong cơ thể có kết quả dương tính.",
+        "Là người có hành vi sử dụng chất ma túy từ hai lần trở lên mà không được sự cho phép của người hoặc cơ quan chuyên môn có thẩm quyền.",
+        "Là người có hành vi sử dụng chất ma túy mà không được sự cho phép của người hoặc cơ quan chuyên môn có thẩm quyền."
+      ],
+      "correct": null
+    },
+    {
+      "id": 4,
+      "topicId": 1,
+      "title": "Sinh viên tham gia các hoạt động mê tín dị đoan; hoạt động tôn giáo trái phép; tuyên truyền, chống phá Đảng, Nhà nước thì bị phạt bao nhiêu điểm rèn luyện trong khung đánh giá rèn luyện?",
+      "choices": [
+        "15",
+        "25",
+        "31",
+        "15 đến 31"
+      ],
+      "correct": null
+    },
+    {
+      "id": 5,
+      "topicId": 1,
+      "title": "Đường lưỡi bò (Đường 9 đoạn): Là tên gọi dùng để chỉ đường quốc giới hải vực biển đông mà Trung Quốc chủ trương và đơn phương tuyên bố chủ quyền đã bị tòa án trọng tài thường trực theo phụ lục VII của công ước Liên hiệp Quốc về luật biển năm 1982 bác bỏ vào ngày nào?",
+      "choices": [
+        "16/07/2012.",
+        "17/02/2016",
+        "12/07/2016",
+        "12/06/2017"
+      ],
+      "correct": null
+    },
+    {
+      "id": 6,
+      "topicId": 1,
+      "title": "Hiến pháp 2013 được Quốc hội khóa XIII thông qua vào ngày nào?:",
+      "choices": [
+        "21/08/2013",
+        "23/08/2013",
+        "25/08/2013",
+        "28/11/2013"
+      ],
+      "correct": null
+    },
+    {
+      "id": 7,
+      "topicId": 1,
+      "title": "Luật giáo dục năm 2019 có hiệu lực từ ngày nào?",
+      "choices": [
+        "01/07/2019",
+        "07/01/2019",
+        "01/07/2020",
+        "07/01/2020"
+      ],
+      "correct": null
+    },
+    {
+      "id": 8,
+      "topicId": 1,
+      "title": "“Mọi người có quyền sống. Tính mạng con người được pháp luật bảo hộ. Không ai bị tước đoạt tính mạng trái luật”. Nội dung trên được quy định tại điều bao nhiêu trong quyền con người, quyền công dân theo Hiến pháp 2013",
+      "choices": [
+        "Điều 19.",
+        "Điều 20",
+        "Điều 22",
+        "Điều 23"
+      ],
+      "correct": null
+    },
+    {
+      "id": 9,
+      "topicId": 1,
+      "title": "Khoản 2 Điều 39 Luật Giáo dục năm 2019 quy định?",
+      "choices": [
+        "Có khả năng nắm bắt tiến bộ khoa học và công nghệ tương xứng với trình độ đào tạo, khả năng tự học, sáng tạo, thích nghi với môi trường làm việc.",
+        "Có tinh thần lập nghiệp, có ý thức phục vụ Nhân dân.",
+        "Đào tạo người học phát triển toàn diện về đức, trí, thể, mỹ; có tri thức, kỹ năng, trách nhiệm nghề nghiệp.",
+        "Bao gồm cả 3 ý"
+      ],
+      "correct": null
+    },
+    {
+      "id": 10,
+      "topicId": 1,
+      "title": "Luật sửa đổi một số Điều của Bộ luật hình sự năm 2015 có hiệu lực thi hành từ ngày nào?",
+      "choices": [
+        "01/07/2015",
+        "01/07/2016",
+        "01/07/2017",
+        "01/07/2018"
+      ],
+      "correct": null
+    },
+    {
+      "id": 11,
+      "topicId": 1,
+      "title": "Địa điểm cấm hút thuốc lá hoàn toàn trong nhà là?",
+      "choices": [
+        "Nơi làm việc.",
+        "Trường cao đẳng, đại học, học viện",
+        "Địa điểm công cộng, trừ các trường hợp quy định tại khaonr 1 Điều 11 và khoản 1 Điều 12 của Luật Phòng, chống tác hại của thuốc lá",
+        "Bao gồm cả 3 ý"
+      ],
+      "correct": null
+    },
+    {
+      "id": 12,
+      "topicId": 1,
+      "title": "Luật phòng, chống tham nhũng được Quốc hội khóa XIV thông qua có hiệu lực thi hành từ ngày nào?",
+      "choices": [
+        "09/01/2017",
+        "07/01/2019",
+        "01/07/2019",
+        "07/01/2020"
+      ],
+      "correct": null
+    },
+    {
+      "id": 13,
+      "topicId": 1,
+      "title": "Luật phòng, chống tham nhũng được Quốc hội khóa XIV thông qua ngày nào?",
+      "choices": [
+        "20/11/2017",
+        "20/11/2018",
+        "20/11/2019",
+        "20/11/2020"
+      ],
+      "correct": null
+    },
+    {
+      "id": 14,
+      "topicId": 1,
+      "title": "Luật sửa đổi một số Điều của Bộ luật hình sự năm 2015 được Quốc hội khóa XIV thông qua ngày nào?",
+      "choices": [
+        "20/06/2015.",
+        "20/02/2017.",
+        "20/06/2017.",
+        "01/07/2018"
+      ],
+      "correct": null
+    },
+    {
+      "id": 15,
+      "topicId": 1,
+      "title": "Sinh viên trộm cắp tài sản; chứa chấp, tiêu thụ tài sản do lấy cắp mà có; tham gia đánh bạc, số đề, cá độ bóng đá; mua bán dâm thì bị phạt điểm rèn luyện bao nhiêu và có được lao động giảm điểm không?",
+      "choices": [
+        "26 đến 31 điểm, được lao động giảm điểm",
+        "26 đến 31 điểm, không được lao động giảm điểm",
+        "31 điểm, được lao động giảm điểm",
+        "31 điểm, không được lao động giảm điểm"
+      ],
+      "correct": null
+    },
+    {
+      "id": 16,
+      "topicId": 1,
+      "title": "SV phạm lỗi tàng trữ/ buôn bán/ sử dụng/ lôi kéo người khác sử dụng vũ khí, chất cháy nổ; ma tuý; buôn bán hàng cấm theo quy định của Nhà nước thì bị phạt điểm rèn luyện như thế nào?",
+      "choices": [
+        "26 đến 31 điểm, được lao động giảm điểm",
+        "26 đến 31 điểm, không được lao động giảm điểm",
+        "31 điểm, được lao động giảm điểm",
+        "31 điểm, không được lao động giảm điểm"
+      ],
+      "correct": null
+    },
+    {
+      "id": 17,
+      "topicId": 1,
+      "title": "SV phạm lỗi vô lễ, có hành vi đe doạ thầy cô giáo, cán bộ công nhân viên, người thừa hành công vụ, gây gổ đánh nhau, đánh nhau gây thương tích thì bị phạt điểm rèn luyện như thế nào?",
+      "choices": [
+        "15 đến 31 điểm, không được lao động giảm điểm",
+        "15 điểm, được lao động giảm điểm",
+        "31 điểm, không được lao động giảm điểm",
+        "26 đến 31 điểm, được lao động giảm điểm"
+      ],
+      "correct": null
+    },
+    {
+      "id": 18,
+      "topicId": 1,
+      "title": "SV gây mất đoàn kết trong Nhóm, đoàn thể, trong và ngoài trường thì bị phạt điểm rèn luyện như thế nào?",
+      "choices": [
+        "15 đến 31 điểm, không được lao động giảm điểm",
+        "15 điểm, được lao động giảm điểm",
+        "31 điểm, không được lao động giảm điểm",
+        "26 đến 31 điểm, được lao động giảm điểm"
+      ],
+      "correct": null
+    },
+    {
+      "id": 19,
+      "topicId": 1,
+      "title": "SV là cán bộ phụ trách, quản lý tốt nhóm, các tổ chức đảng, đoàn, hội, các câu lạc bộ của Khoa/ Viện, của Trường thì được thưởng bao nhiêu điểm rèn luyện trong khung đánh giá rèn luyện?",
+      "choices": [
+        "5 điểm",
+        "15 điểm",
+        "10 điểm",
+        "20 điểm"
+      ],
+      "correct": null
+    },
+    {
+      "id": 20,
+      "topicId": 1,
+      "title": "Xét nghiệm chất ma túy trong cơ thể được thực hiện đối với người thuộc trường hợp nào sau đây:",
+      "choices": [
+        "Người bị phát hiện sử dụng trái phép chất ma túy",
+        "Người mà cơ quan, người có thẩm quyền có căn cứ cho rằng có hành vi sử dụng trái phép chất ma túy",
+        "Người đang trong thời gian bị áp dụng biện pháp xử lý hành chính giáo dục tại xã, phường, thị trấn do có hành vi sử dụng trái phép chất ma túy; đang cai nghiện ma túy; đang điều trị nghiện các chất dạng thuốc phiện bằng thuốc thay thế; đang trong thời hạn quản lý sau cai nghiện ma túy.",
+        "Tất cả các nội dung trên."
+      ],
+      "correct": null
+    },
+    {
+      "id": 21,
+      "topicId": 1,
+      "title": "Theo Luật Phòng chống tác hại của thuốc lá, những hành vi nào sau đây bị cấm",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 22,
+      "topicId": 1,
+      "title": "Tình hình kinh tế thế giới theo nhận định của IMF, WB, OECD được miêu tả như thế nào",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 23,
+      "topicId": 1,
+      "title": "Khó khăn và thách thức đối với kinh tế Việt Nam 6 tháng đầu năm 2024",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 24,
+      "topicId": 1,
+      "title": "Những quốc gia nào sau đây không tham gia công ước UNCLOS (Công ước Liên Hợp Quốc về Luật biển)",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 25,
+      "topicId": 1,
+      "title": "Chủ trương nhất quán của Việt Nam về giải quyết các tranh chấp ở Biển Đông",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 26,
+      "topicId": 1,
+      "title": "Phát biểu nào sau đây là sai khi nói về Quyền con người, quyền công dân theo Hiến pháp 2013",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 27,
+      "topicId": 1,
+      "title": "Phát biểu nào sau đây là đúng khi nói về Quyền con người, quyền công dân theo Hiến pháp 2013",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 28,
+      "topicId": 1,
+      "title": "Mục tiêu của giáo dục đại học theo Luật giáo dục năm 2019",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 29,
+      "topicId": 1,
+      "title": "Theo khoản 1 Điều 17 Bộ luật Hình sự 2015 (sửa đổi, bổ sung 2017), đồng phạm là trường hợp có hai người trở lên cố ý cùng thực hiện một tội phạm, người đồng phạm bao gồm:",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 30,
+      "topicId": 1,
+      "title": "Theo khoản 1 Điều 17 Bộ luật Hình sự 2015 (sửa đổi, bổ sung 2017), đồng phạm là trường hợp có hai người trở lên cố ý cùng thực hiện một tội phạm, người đồng phạm bao gồm:",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 31,
+      "topicId": 1,
+      "title": "Theo Luật thanh niên năm 2020, tháng nào trong năm được quy định là Tháng thanh niên",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 32,
+      "topicId": 1,
+      "title": "Theo Luật thanh niên năm 2020, tổ chức nào sau đây có trách nhiệm giám sát và phản biện xã hội đối với chính sách, pháp luật về thanh niên theo quy định của pháp luật; tổng hợp, phản ánh ý kiến, kiến nghị của thanh niên đến cơ quan, tổ chức có thẩm quyền",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 33,
+      "topicId": 1,
+      "title": "Theo Luật thanh niên năm 2020, tổ chức nào sau đây là tổ chức xã hội của sinh viên Việt Nam nhằm đoàn kết, tập hợp sinh viên Việt Nam cùng phấn đấu học tập, rèn luyện và cống hiến cho đất nước",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 34,
+      "topicId": 1,
+      "title": "Theo Bộ luật hình sự năm 2015 (sửa đổi, bổ sung năm 2017), tội phạm được định nghĩa",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 35,
+      "topicId": 1,
+      "title": "Theo Luật phòng chống ma túy 2021, người nghiện ma túy được định nghĩa như thế nào",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 36,
+      "topicId": 1,
+      "title": "Luật Giáo dục năm 2019 có hiệu lực thi hành từ ngày tháng năm nào?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 37,
+      "topicId": 1,
+      "title": "Luật Thanh niên năm 2020 quy định nội dung quản lý Nhà nước về thanh niên với bao nhiêu nhiệm vụ?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 38,
+      "topicId": 1,
+      "title": "Chất gây nghiện là gì?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 39,
+      "topicId": 3,
+      "title": "Đoàn TNCS Hồ Chí Minh được thành lập vào ngày tháng năm nào?",
+      "choices": [
+        "26/3/1930",
+        "26/3/1931",
+        "26/3/1932",
+        "26/3/1933"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 40,
+      "topicId": 3,
+      "title": "Tổ chức Việt Nam thanh niên cách mạng đồng chí hội tiền thân của Đoàn TNCS Hồ Chí Minh do ai sáng lập?",
+      "choices": [
+        "Bác Hồ",
+        "Phạm Văn Đồng",
+        "Võ Nguyên Giáp",
+        "Nông Đức Mạnh"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 41,
+      "topicId": 3,
+      "title": "Bài hát chính thức của Đoàn TNCS Hồ Chí Minh là gì?",
+      "choices": [
+        "Thanh niên làm theo lời Bác.",
+        "Tiến lên đoàn viên.",
+        "Tuổi trẻ thế hệ Bác Hồ.",
+        "Lên đàng."
+      ],
+      "correct": 0
+    },
+    {
+      "id": 42,
+      "topicId": 3,
+      "title": "Theo điều lệ Đoàn TNCS Hồ Chí Minh hiện tại, độ tuổi để xét kết nạp Đoàn là bao nhiêu?",
+      "choices": [
+        "Từ 15 tuổi -> 30 tuổi.",
+        "Từ đủ 15 tuổi -> 30 tuổi.",
+        "Từ 16 tuổi -> 30 tuổi.",
+        "Từ đủ 16 tuổi -> 30 tuổi."
+      ],
+      "correct": 2
+    },
+    {
+      "id": 43,
+      "topicId": 3,
+      "title": "Bí thư thứ nhất Trung ương Đoàn hiện nay là ai?",
+      "choices": [
+        "Nguyễn Anh Tuấn.",
+        "Bùi Quang Huy",
+        "Lê Quốc Phong",
+        "Nguyễn Ngọc Lương"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 44,
+      "topicId": 3,
+      "title": "Một Chi đoàn, Chi hội tại trường Đại học Hàng hải Việt Nam được tổ chức ứng với?",
+      "choices": [
+        "Một lớp học phần",
+        "Một lớp niên chế",
+        "Một lớp ngành",
+        "Một nhóm sinh viên gồm các sinh viên ở cùng khoá học với nhau."
+      ],
+      "correct": 3
+    },
+    {
+      "id": 45,
+      "topicId": 3,
+      "title": "Ban Chấp hành Chi đoàn gồm mấy đồng chí?",
+      "choices": [
+        "03 đồng chí (Bí thư, Phó Bí thư, Ủy viên)",
+        "05 đồng chí (Bí thư, 02 Phó Bí thư, 02 Ủy viên)",
+        "04 đồng chí (Bí thư, Phó Bí thư, 02 Ủy viên)",
+        "02 đồng chí (Bí thư, Phó Bí thư)"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 46,
+      "topicId": 3,
+      "title": "Ban Chấp hành Liên chi đoàn Khoa, Viện gồm mấy đồng chí?",
+      "choices": [
+        "05 – 07 đồng chí",
+        "07 – 09 đồng chí",
+        "09 – 15 đồng chí",
+        "11 – 13 đồng chí"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 47,
+      "topicId": 3,
+      "title": "Cơ cấu của tổ chức Đoàn Thanh niên tại Trường Đại học Hàng hải Việt Nam gồm mấy cấp?",
+      "choices": [
+        "03 cấp: Đoàn Trường – Liên chi đoàn Khoa, Viện; Đoàn trực thuộc – Chi đoàn",
+        "01 cấp: Đoàn Trường",
+        "02 cấp: Liên chi đoàn Khoa, Viện; Đoàn trực thuộc – Chi đoàn",
+        "04 cấp: Đoàn Trường – Liên chi đoàn Khoa, Viện – Chi đoàn – Phân đoàn"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 48,
+      "topicId": 3,
+      "title": "Đoàn thanh niên Trường Đại học Hàng hải Việt Nam:",
+      "choices": [
+        "Là tổ chức chính trị - xã hội của thanh niên",
+        "Là Đoàn trường Đại học, Cao đẳng",
+        "Trực thuộc Thành đoàn Hải Phòng",
+        "Tất cả các ý đều đúng"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 49,
+      "topicId": 3,
+      "title": "Hội Sinh viên Trường Đại học Hàng hải Việt Nam:",
+      "choices": [
+        "Là tổ chức chính trị - xã hội của sinh viên",
+        "Là tổ chức Hội Sinh viên trường Đại học, Cao đẳng",
+        "Trực thuộc Hội Sinh viên Việt Nam thành phố Hải Phòng",
+        "Tất cả các ý đều đúng"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 50,
+      "topicId": 3,
+      "title": "Sinh viên cần liên hệ để thực hiện các thủ tục chuyển sinh hoạt Đoàn tại đâu:",
+      "choices": [
+        "Văn phòng Đoàn trường – Phòng 202 nhà A9-3",
+        "Văn phòng Hội Sinh viên trường – Phòng 101 nhà A9",
+        "Tại Văn phòng của Khoa, Viện đang theo học",
+        "Tại phòng Đào tạo."
+      ],
+      "correct": 0
+    },
+    {
+      "id": 51,
+      "topicId": 3,
+      "title": "Đoàn viên có trách nhiệm liên hệ Văn phòng Đoàn trường để nhận lại Sổ đoàn trong trường hợp nào:",
+      "choices": [
+        "Sinh viên đã tốt nghiệp hoặc ngừng học",
+        "Hết một kỳ học",
+        "Hết một năm học",
+        "Sinh viên thuộc diện bảo lưu"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 52,
+      "topicId": 3,
+      "title": "Trong năm học 2024 – 2025, có bao nhiêu Câu lạc bộ cấp trường sinh viên có thể tham gia sinh hoạt:",
+      "choices": [
+        "25",
+        "26",
+        "27",
+        "28"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 53,
+      "topicId": 3,
+      "title": "Sinh viên được tham gia vào bao nhiêu Câu lạc bộ sinh viên trong quá trình học tập tại Trường",
+      "choices": [
+        "02 Câu lạc bộ",
+        "03 Câu lạc bộ",
+        "04 Câu lạc bộ",
+        "Không có giới hạn, tùy vào nhu cầu và việc sắp xếp thời gian của sinh viên."
+      ],
+      "correct": 3
+    },
+    {
+      "id": 54,
+      "topicId": 3,
+      "title": "Các kênh thông tin chính thức của Đoàn Thanh niên, Hội Sinh viên Trường Đại học Hàng hải Việt Nam",
+      "choices": [
+        "",
+        "",
+        "",
+        "Tất cả các kênh thông tin trên"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 55,
+      "topicId": 3,
+      "title": "Ngày hội Chào tân sinh viên K65 sẽ diễn ra vào thời điểm nào",
+      "choices": [
+        "Ngày 19/10/2023",
+        "Ngày 20/10/2023",
+        "Ngày 21/10/2023",
+        "Ngày 22/10/2023"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 56,
+      "topicId": 3,
+      "title": "Chương trình \"Mùa hè xanh 2025\" được diễn ra vào thời điểm nào của năm học",
+      "choices": [
+        "Tháng 04/2025",
+        "Tháng 05/2025",
+        "Tháng 06/2025",
+        "Tháng 07/2025"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 57,
+      "topicId": 3,
+      "title": "Giải bóng đá nam, nữ sinh viên được tổ chức vào thời gian nào của năm học",
+      "choices": [
+        "Tháng 10/2024",
+        "Tháng 11/2024",
+        "Tháng 12/2024",
+        "Tháng 03/2025"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 58,
+      "topicId": 3,
+      "title": "Chương trình “Hiến máu tình nguyện” được tổ chức vào thời điểm nào của năm học",
+      "choices": [
+        "Tháng 09/2024",
+        "Tháng 12/2024",
+        "Tháng 04/2025",
+        "Tất cả các thời điểm trên."
+      ],
+      "correct": 3
+    },
+    {
+      "id": 59,
+      "topicId": 3,
+      "title": "Gala các nhóm nhảy sinh viên được tổ chức vào thời điểm nào",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 60,
+      "topicId": 3,
+      "title": "Cuộc thi nhảy đồng diễn được tổ chức vào thời điểm nào",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 61,
+      "topicId": 3,
+      "title": "Cuộc thi nhảy đồng diễn là hoạt động được tổ chức nhằm hướng đến kỷ niệm",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 62,
+      "topicId": 3,
+      "title": "Chương trình Tiếp sức mùa thi được tổ chức vào thời điểm nào",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 63,
+      "topicId": 3,
+      "title": "Các câu lạc bộ được xếp vào nhóm CLB học thuật là",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 64,
+      "topicId": 3,
+      "title": "Các câu lạc bộ trong nhóm CLB tình nguyện, kỹ năng là",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 65,
+      "topicId": 3,
+      "title": "Câu lạc bộ được xếp vào nhóm CLB văn hoá, văn nghệ là",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 66,
+      "topicId": 3,
+      "title": "Câu lạc bộ được xếp vào nhóm CLB học thuật là",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 67,
+      "topicId": 3,
+      "title": "Câu lạc bộ được xếp vào nhóm CLB văn hoá, văn nghệ là",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 68,
+      "topicId": 3,
+      "title": "Các câu lạc bộ được xếp vào nhóm CLB thể thao là",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 69,
+      "topicId": 3,
+      "title": "Câu lạc bộ được xếp vào nhóm CLB thể thao là",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 70,
+      "topicId": 3,
+      "title": "Các câu lạc bộ được xếp vào nhóm CLB văn hoá, văn nghệ là",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 71,
+      "topicId": 3,
+      "title": "Ai là tác giả của bài Đoàn ca",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 72,
+      "topicId": 3,
+      "title": "Cơ quan lãnh đạo cao nhất của Đoàn TNCS Hồ Chí Minh",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 73,
+      "topicId": 3,
+      "title": "Anh Lý Tự Trọng đã gửi gắm câu nói gì đến tuổi trẻ Việt Nam",
+      "choices": [],
+      "correct": 1
+    },
+    {
+      "id": 74,
+      "topicId": 3,
+      "title": "Ai là Đồng chí Bí thư thứ nhất Trung ương Đoàn đầu tiên của Việt Nam?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 75,
+      "topicId": 3,
+      "title": "Tác giả của mẫu huy hiệu Đoàn Thanh niên Cộng sản Hồ Chí Minh là ai?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 76,
+      "topicId": 3,
+      "title": "\"Con đường của thanh niên chỉ có thể là con đường cách mạng chứ không thể là con đường nào khác\". Đây là câu nói nổi tiếng của ai?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 77,
+      "topicId": 3,
+      "title": "Hình thức bầu cử nhân sự các cấp trong tổ chức Đoàn TNCS Hồ Chí Minh là?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 78,
+      "topicId": 3,
+      "title": "Kỳ Đại hội đại biểu toàn quốc Đoàn TNCS Hồ Chí Minh gần nhất là lần thứ bao nhiêu?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 79,
+      "topicId": 4,
+      "title": "Nguyên nhân dẫn đến tai nạn giao thông?",
+      "choices": [
+        "Người tham gia giao thông không chú ý quan sát",
+        "Người tham gia giao thông không nhường đường khi từ đường nhánh ra đường chính",
+        "Sử dụng rượu, bia khi tham gia giao thông",
+        "Cả 3 phương án đều đúng"
+      ],
+      "correct": null
+    },
+    {
+      "id": 80,
+      "topicId": 4,
+      "title": "Thiệt hại do tai nạn giao thông gây ra ?",
+      "choices": [
+        "Thiệt hại về tính mạng, sức khỏe, tinh thần cho người bị nạn, người gây tai nạn và những người thân của họ.",
+        "Đối với xã hội: Gây mất mát đáng kể về nguồn lực. Sửa chữa cơ sở hạ tầng v.v gây sụt giảm kinh tế",
+        "Cả 2 phương án đều đúng"
+      ],
+      "correct": null
+    },
+    {
+      "id": 81,
+      "topicId": 4,
+      "title": "Tìm hiểu, học tập và thực hiện đúng các quy định của pháp luật về trật tự an toàn giao thông là trách nhiệm và nghĩa vụ của ai?",
+      "choices": [
+        "Toàn dân",
+        "Học sinh",
+        "Sinh viên",
+        "Giảng viên"
+      ],
+      "correct": null
+    },
+    {
+      "id": 82,
+      "topicId": 4,
+      "title": "Tai nạn giao thông là gì?",
+      "choices": [
+        "Tai nạn giao thông đường bộ là va chạm liên quan đến người",
+        "Tai nạn giao thông đường bộ là va chạm liên quan đến người, phương tiện khi tham gia giao thông đường bộ",
+        "Tai nạn giao thông đường bộ là va chạm liên quan đến người, phương tiện khi tham gia giao thông đường bộ, xảy ra ngoài ý muốn của người tham gia giao thông đường bộ",
+        "Tai nạn giao thông đường bộ là va chạm liên quan đến người, phương tiện khi tham gia giao thông đường bộ, xảy ra ngoài ý muốn của người tham gia giao thông đường bộ, gây thiệt hại đến tính mạng, sức khỏe, tài sản của cá nhân hoặc tài sản của cơ quan, tổ chức"
+      ],
+      "correct": null
+    },
+    {
+      "id": 83,
+      "topicId": 4,
+      "title": "Quy tắc chung khi tham gia giao thông trên đường bộ?",
+      "choices": [
+        "Người tham gia giao thông đi bên phải theo chiều đi của mình",
+        "Đi đúng phần đường, làn đường quy định",
+        "Chấp hành hệ thống báo hiệu đường bộ.",
+        "Cả 3 phương án đều đúng"
+      ],
+      "correct": null
+    },
+    {
+      "id": 84,
+      "topicId": 4,
+      "title": "Quy định về chấp hành hệ thống báo hiệu đường bộ?",
+      "choices": [
+        "Phải chấp hành hiệu lệnh và chỉ dẫn của biển báo hiệu đường bộ.",
+        "Khi có người điều khiển giao thông, biển báo, đèn tín hiệu thì chấp hành theo hiệu lệnh của người điều khiển giao thông",
+        "Tại nơi có biển báo cố định lại có biển báo tạm thời thì chấp hành theo hiệu lệnh của biển báo hiệu tạm thời",
+        "Cả 3 phương án đều đúng"
+      ],
+      "correct": null
+    },
+    {
+      "id": 85,
+      "topicId": 4,
+      "title": "Các quy định về chuyển hướng xe?",
+      "choices": [
+        "Phải đảm bảo đủ 3 phương án",
+        "Khi muốn chuyển hướng, người điều khiển phương tiện phải giảm tốc độ",
+        "Phải có tín hiệu báo hướng rẽ",
+        "Khi chuyển hướng phải quan sát các phương tiện cùng chiều và ngược lại"
+      ],
+      "correct": null
+    },
+    {
+      "id": 86,
+      "topicId": 4,
+      "title": "Quy định về đội mũ bảo hiểm khi tham gia giao thông?",
+      "choices": [
+        "Người điều khiển, người ngồi trên xe mô tô, xe gắn máy, xe đạp điện phải đội mũ bảo hiểm và cài quai đúng quy cách.",
+        "Chỉ cần mang mũ bảo hiểm theo",
+        "Khi tham gia giao thông phải đội mũ bảo hiểm.",
+        "Cả 3 phương án đều đúng."
+      ],
+      "correct": null
+    },
+    {
+      "id": 87,
+      "topicId": 4,
+      "title": "Quy định về số người được chở tối đa trên xe đạp, xe đạp máy?",
+      "choices": [
+        "Chỉ được chở một người.",
+        "Chỉ được chở tối đa một người lớn và một trẻ em dưới 7 tuổi nhưng phải có ghế ngồi dành riêng cho trẻ em.",
+        "Chỉ được chở một người trừ trường hợp sau được chở tối đa 2 người: Chở người bệnh đi cấp cứu, áp giải người có hành vi vi phạm pháp luật, trẻ em dưới 14 tuổi.",
+        "Được chở 2 người nhưng phải đội mũ bảo hiểm."
+      ],
+      "correct": null
+    },
+    {
+      "id": 88,
+      "topicId": 4,
+      "title": "Quy định về số người được chở tối đa trên xe mô tô, xe gắn máy?",
+      "choices": [
+        "Cả 3 phương án đều đúng.",
+        "Chỉ được chở một người.",
+        "Chỉ được chở một người trừ trường hợp sau được chở tối đa 2 người: Chở người bệnh đi cấp cứu, áp giải người có hành vi vi phạm pháp luật, trẻ em dưới 14 tuổi.",
+        "Được chở 2 người nhưng phải đội mũ bảo hiểm."
+      ],
+      "correct": null
+    },
+    {
+      "id": 89,
+      "topicId": 4,
+      "title": "Trách nhiệm của những người có mặt tại hiện trường vụ tai nạn giao thông?",
+      "choices": [
+        "Bảo vệ hiện trường, bảo vệ tài sản của người bị nạn",
+        "Giúp đỡ, cứu chữa nạn nhân.",
+        "Báo ngay cho cơ quan công an hoặc UBND nơi gần nhất và cung cấp thông tin xác thực về vụ tai nạn.",
+        "Cả 3 phương án"
+      ],
+      "correct": null
+    },
+    {
+      "id": 90,
+      "topicId": 4,
+      "title": "Sinh viên cần liên hệ để thực hiện các thủ tục chuyển sinh hoạt Đoàn tại đâu:",
+      "choices": [
+        "Văn phòng Đoàn trường – Phòng 202 nhà A9-3",
+        "Văn phòng Hội Sinh viên trường – Phòng 101 nhà A9",
+        "Tại Văn phòng của Khoa, Viện đang theo học",
+        "Tại phòng Đào tạo."
+      ],
+      "correct": 0
+    },
+    {
+      "id": 91,
+      "topicId": 4,
+      "title": "Nếu trong máu hoặc hơi thởi có nồng độ cồn nhưng chưa vượt quá 50 miligam/100 mililít máu hoặc chưa vượt quá 0,25 miligam/1 lít khí thở thì mức phạt như thế nào",
+      "choices": [
+        "Phạt tiền từ 1 triệu đồng đến 2 triệu đồng, tước giấy phép lái xe từ 10 tháng đến 12 tháng.",
+        "Phạt tiền từ 3 triệu đồng đến 4 triệu đồng, tước giấy phép lái xe từ 10 tháng đến 12 tháng.",
+        "Phạt tiền từ 2 triệu đồng đến 3 triệu đồng, tước giấy phép lái xe từ 10 tháng đến 12 tháng.",
+        "Phạt tiền từ 5 triệu đồng đến 6 triệu đồng, tước giấy phép lái xe từ 10 tháng đến 12 tháng."
+      ],
+      "correct": null
+    },
+    {
+      "id": 92,
+      "topicId": 4,
+      "title": "Dùng tay sử dụng điện thoại di động khi đang lái xe thì mức phạt là bao nhiêu tiền?:",
+      "choices": [
+        "500 nghìn đồng",
+        "Từ 500 nghìn đồng đến 1 triệu đồng",
+        "Từ 1 đến 2 triệu đồng",
+        "2 triệu đồng"
+      ],
+      "correct": null
+    },
+    {
+      "id": 93,
+      "topicId": 4,
+      "title": "Phương tiện giao thông dừng, đỗ sai quy định gây tai nạn giao thông thì bị phạt bao nhiêu tiền?",
+      "choices": [
+        "200 đến 300 nghìn đồng",
+        "500 nghìn đồng",
+        "Từ 500 nghìn đồng đến 1 triệu đồng",
+        "Từ 4 triệu đồng đến 5 triệu đồng."
+      ],
+      "correct": null
+    },
+    {
+      "id": 94,
+      "topicId": 4,
+      "title": "Phương tiện giao thông vượt phải thì bị phạt bao nhiêu tiền?",
+      "choices": [
+        "200 đến 300 nghìn đồng",
+        "400 đến 600 nghìn đồng",
+        "Từ 500 nghìn đồng đến 1 triệu đồng",
+        "Từ 1 đến 2 triệu đồng"
+      ],
+      "correct": null
+    },
+    {
+      "id": 95,
+      "topicId": 4,
+      "title": "Nếu trong máu và hơi thở có nồng độ cồn nhưng vượt quá 50 miligam đến 80 miligam/100 mililít máu hoặc vượt quá 0,25 miligam đến 0,4 miligam/1 lít khí thở thì mức phạt là bao nhiêu",
+      "choices": [
+        "Phạt tiền từ 3 triệu đồng đến 4 triệu đồng. Tước giấy phép lái xe từ 16 tháng đến 18 tháng",
+        "Phạt tiền từ 4 triệu đồng đến 5 triệu đồng. Tước giấy phép lái xe từ 16 tháng đến 18 tháng",
+        "Phạt tiền từ 5 triệu đồng đến 6 triệu đồng. Tước giấy phép lái xe từ 16 tháng đến 18 tháng",
+        "Phạt tiền từ 6 triệu đồng đến 7 triệu đồng. Tước giấy phép lái xe từ 16 tháng đến 18 tháng"
+      ],
+      "correct": null
+    },
+    {
+      "id": 96,
+      "topicId": 4,
+      "title": "Người đi xe máy vượt đèn vàng thì bị phạt bao nhiêu tiền?",
+      "choices": [
+        "200 đến 500 nghìn đồng",
+        "400 đến 600 nghìn đồng",
+        "01 triệu đồng",
+        "Từ 01 đến 02 triệu đồng"
+      ],
+      "correct": null
+    },
+    {
+      "id": 97,
+      "topicId": 4,
+      "title": "Trong thời gian bị tước quyền sử dụng giấy phép, chứng chỉ hành nghề, cá nhân, tổ chức không được làm gì?",
+      "choices": [
+        "Cấp đổi giấy phép, chứng chỉ hành nghề",
+        "Cấp mới giấy phép, chứng chỉ hành nghề",
+        "Bao gồm cả 02 ý"
+      ],
+      "correct": null
+    },
+    {
+      "id": 98,
+      "topicId": 4,
+      "title": "Sinh viên vi phạm Luật giao thông đường bộ bị phạt bao nhiêu điểm rèn luyện trong Khung đánh giá rèn luyện của Quy chế công tác sinh viên? A. Tháng 09/2024",
+      "choices": [
+        "25 điểm",
+        "10 điểm",
+        "15 điểm",
+        "20 điểm"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 99,
+      "topicId": 4,
+      "title": "Nếu SV vi phạm Luật Giao thông đường bộ và bị cảnh sát giao thông lập biên bản thì",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 100,
+      "topicId": 4,
+      "title": "Nếu trong máu hoặc hơi thở có nồng độ cồn  vượt quá 80 miligam/100 mililít máu hoặc vượt quá 0,4 miligam/1 lít khí thở",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 101,
+      "topicId": 4,
+      "title": "Chuyển hướng không có tín hiệu báo hướng rẽ thì bị phạt bao nhiêu tiền?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 102,
+      "topicId": 4,
+      "title": "Mức phạt khi điều khiển xe lạng lách, đánh võng?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 103,
+      "topicId": 4,
+      "title": "Mức phạt bổ xung khi tái phạm hành vi điều khiển xe lạng lách, đánh võng?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 104,
+      "topicId": 4,
+      "title": "Mức phạt khi vượt đèn đỏ?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 105,
+      "topicId": 4,
+      "title": "Trật tự, an toàn giao thông đường bộ là gì?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 106,
+      "topicId": 4,
+      "title": "Hậu quả đổi với người bị tai nạn giao thông là gì?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 107,
+      "topicId": 4,
+      "title": "Đèn tín hiệu giao thông có mấy màu?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 108,
+      "topicId": 4,
+      "title": "Người điều khiển phương tiện giao thông không uống rượu, bia trong trường hợp nào dưới đây?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 109,
+      "topicId": 4,
+      "title": "Nghị định 100/2019/NĐ-CP của Chính phủ quy định xử phạt vi phạm hành chính trong lĩnh vực giao thông đường bộ và đường sắt được ban hành ngày tháng năm nào?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 110,
+      "topicId": 4,
+      "title": "Nghị định số 100/2019/NĐ-CP của Chính phủ quy định xử phạt vi phạm hành chính trong lĩnh vực giao thông đường bộ và đường sắt có hiệu lực thi hành từ ngày tháng năm nào?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 111,
+      "topicId": 4,
+      "title": "Luật số 36/2024/QH15 của Chính phủ về trật tự, an toàn giao thông đường bộ được ban hành ngày tháng năm nào?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 112,
+      "topicId": 4,
+      "title": "Biện pháp phòng tránh tai nạn giao thông khi gặp xe tải, xe container?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 113,
+      "topicId": 4,
+      "title": "Biện pháp phòng tránh tai nạn giao thông đối với xe khách, xe bus?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 114,
+      "topicId": 4,
+      "title": "Người điều khiển xe môtô hai bánh, ba bánh có dung tích xi lanh từ 50cm3 trở lên phải đủ bao nhiêu tuổi?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 115,
+      "topicId": 4,
+      "title": "Những hành vi nào sau đây người tham gia giao thông được phép thực hiện?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 116,
+      "topicId": 4,
+      "title": "Khi tham gia giao thông bằng xe máy trên đường, được phép",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 117,
+      "topicId": 4,
+      "title": "Xe môtô 2 bánh, gắn máy được chở nhiều nhất là mấy người?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 118,
+      "topicId": 4,
+      "title": "Người ngồi trên xe mô tô hai bánh, ba bánh, xe gắn máy khi tham gia giao thông có được mang vác vật cồng kềnh hay không?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 119,
+      "topicId": 5,
+      "title": "Luật Phòng cháy và chữa cháy được Quốc hội khóa X, kỳ họp thứ 9 thông qua ngay 29/06/2001 có hiệu lực thi hành từ ngày tháng năm nào?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 120,
+      "topicId": 5,
+      "title": "Luật sửa đổi, bổ sung một số điều của Luật Phòng cháy và chữa cháy được Quốc hội khóa XIII, kỳ họp thứ 6 thông qua ngay 22/11/2013 có hiệu lực thi hành từ ngày tháng năm nào?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 121,
+      "topicId": 5,
+      "title": "Nguyên nhân nào gây ra các vụ cháy chiếm tỷ lệ cao nhất",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 122,
+      "topicId": 5,
+      "title": "Trong 05 bước cơ bản xử lý cháy, nổ khí ga thì bước đầu tiên là",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 123,
+      "topicId": 5,
+      "title": "Nguyên nhân chết trong đám cháy do nhiễm khói độc chiếm tỷ lệ bao nhiêu?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 124,
+      "topicId": 5,
+      "title": "Để thoát nạn trong đám cháy, chúng ta cần",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 125,
+      "topicId": 5,
+      "title": "Số điện thoại báo cháy để gọi cho cảnh sát phòng cháy chữa cháy là gì?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 126,
+      "topicId": 5,
+      "title": "Trong các giải pháp phòng cháy hệ thống điện, giải pháp nào đúng?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 127,
+      "topicId": 5,
+      "title": "Nghị định 136/2020/NĐ-CP của chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật PCCC và luật sửa đổi, bổ sung một số điều của Luật PCCC ban hành ngày nào?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 128,
+      "topicId": 5,
+      "title": "Nghị định 83/2017/NĐ-CP của chính phủ ban hành ngày 18/7/2017 về công tác cứu nạn, cứu hộ, PCCC quy định về điều gì?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 129,
+      "topicId": 5,
+      "title": "Nghị định 23/2018/NĐ-CP của chính phủ ban hành ngày 23/02/2018 về công tác cứu nạn, cứu hộ, PCCC quy định về điều gì?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 130,
+      "topicId": 5,
+      "title": "Thông tư Số 08/2018/TT-BCA của Bộ Công an ban hành ngày 05/3/2018 về công tác cứu nạn, cứu hộ, PCCC quy định về điều gì?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 131,
+      "topicId": 5,
+      "title": "Điều quan trọng nhất để thoát nạn trong đám cháy?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 132,
+      "topicId": 5,
+      "title": "Trường hợp khi xảy ra cháy, bạn bị ngọn lửa bắt vào người thì bạn phải làm gì?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 133,
+      "topicId": 5,
+      "title": "Hành động khi có cháy xảy ra nếu có khói lùa vào phòng bạn",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 134,
+      "topicId": 5,
+      "title": "Khi có đám cháy xảy ra cần thực hiện bước 1 là?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 135,
+      "topicId": 5,
+      "title": "Sinh viên Tàng trữ/ buôn bán/ sử dụng/ lôi kéo người khác sử dụng chất cháy nổ thì bị phạt bao nhiêu điểm rèn luyện trong Khung đánh giá rèn luyện?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 136,
+      "topicId": 5,
+      "title": "Thông tư Số 149/2020/TT-BCA của Bộ Công an ban hành ngày 31/12/2020 về công tác PCCC quy định về điều gì?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 137,
+      "topicId": 5,
+      "title": "Theo thống kê năm 2023 cả nước có bao nhiêu vụ cháy, nổ?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 138,
+      "topicId": 5,
+      "title": "Theo thống kê 6 tháng đầu năm 2024 cả nước có bao nhiêu vụ cháy rừng?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 139,
+      "topicId": 5,
+      "title": "Những đối tượng có trách nhiệm, tổ chức và tham gia các hoạt động PCCC gồm",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 140,
+      "topicId": 5,
+      "title": "Hãy nêu một số biện pháp phòng cháy khi sử dụng thiết bị điện trong gia đình?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 141,
+      "topicId": 6,
+      "title": "Một trong những giải pháp quan trọng để xây dựng môi trường giáo dục an toàn, lành mạnh, thân thiện là:",
+      "choices": [
+        "Tăng cường công tác quản lý, giám sát an ninh, an toàn trường học.",
+        "Tuyên truyền giáo dục về an ninh, an toàn cho sinh viên, giảng viên và nhân viên nhà trường.",
+        "Nâng cao ý thức tự giác phòng ngừa, đấu tranh với các hành vi vi phạm an ninh, an toàn trường học.",
+        "Tất cả các phương án trên."
+      ],
+      "correct": 3
+    },
+    {
+      "id": 142,
+      "topicId": 6,
+      "title": "Nội dung tuyên truyền giáo dục về an ninh, an toàn cho sinh viên, giảng viên và nhân viên nhà trường cần tập trung vào các vấn đề sau:",
+      "choices": [
+        "Các quy định của pháp luật về an ninh, an toàn trường học.",
+        "Các hành vi vi phạm an ninh, an toàn trường học.",
+        "Vai trò của sinh viên, giảng viên và nhân viên nhà trường trong công tác bảo đảm an ninh, an toàn trường học.",
+        "Tất cả các phương án trên."
+      ],
+      "correct": 3
+    },
+    {
+      "id": 143,
+      "topicId": 6,
+      "title": "Tạo môi trường học tập và sinh hoạt lành mạnh, thân thiện cho sinh viên là trách nhiệm của:",
+      "choices": [
+        "Sinh viên.",
+        "Giảng viên.",
+        "Nhân viên nhà trường.",
+        "Tất cả các đối tượng trên."
+      ],
+      "correct": 3
+    },
+    {
+      "id": 144,
+      "topicId": 6,
+      "title": "Sinh viên cần làm gì để tuân thủ các quy định của nhà trường về an ninh, an toàn?:",
+      "choices": [
+        "Mang theo các vật dụng nguy hiểm vào trường.",
+        "Tham gia vào các hoạt động gây mất an ninh.",
+        "Báo cáo kịp thời các hành vi vi phạm an ninh, an toàn cho nhà trường.",
+        "Sử dụng chất kích thích trong khuôn viên trường học."
+      ],
+      "correct": 3
+    },
+    {
+      "id": 145,
+      "topicId": 6,
+      "title": "Sinh viên có thể tạo dựng môi trường học tập và sinh hoạt lành mạnh bằng cách nào?",
+      "choices": [
+        "Cư xử thiếu lịch sự và không quan tâm đến các bạn sinh viên khác.",
+        "Tạo ra bầu không khí học tập và sinh hoạt vui vẻ, lành mạnh và giúp đỡ các bạn sinh viên khác.",
+        "Tham gia vào các hoạt động gây rối trật tự và không chăm sóc đến môi trường học tập",
+        "Tránh giao tiếp với các bạn sinh viên khác và giữ khoảng cách"
+      ],
+      "correct": 0
+    },
+    {
+      "id": 146,
+      "topicId": 6,
+      "title": "Những quy định của nhà trường về an ninh, an toàn mà sinh viên cần tuân thủ là:",
+      "choices": [
+        "Không gây rối trật tự, an ninh trong trường học..",
+        "Không sử dụng các chất kích thích, ma túy trong trường học.",
+        "Báo cáo kịp thời các hành vi vi phạm an ninh, an toàn trường học cho nhà trường",
+        "Tất cả các phương án trên.."
+      ],
+      "correct": null
+    },
+    {
+      "id": 147,
+      "topicId": 6,
+      "title": "Một trong những cách phòng ngừa và xử lý các tình huống nguy hiểm trong trường học là:",
+      "choices": [
+        "Nhanh chóng báo cáo cho nhà trường hoặc cơ quan chức năng khi phát hiện các tình huống nguy hiểm.",
+        "Tự mình xử lý các tình huống nguy hiểm..",
+        "Không quan tâm đến các tình huống nguy hiểm.."
+      ],
+      "correct": null
+    },
+    {
+      "id": 148,
+      "topicId": 6,
+      "title": "Trong các giá trị cốt lõi văn hóa ứng xử của sinh viên Trường Đại học Hàng hải Việt Nam, \"Tự tin\" có nghĩa là gì?",
+      "choices": [
+        "Tự tin vào bản thân và khả năng của mình.",
+        "Không cần phải tự tin.",
+        "Tự cao ngạo.",
+        "Chỉ cần tự tin trước thầy cô giảng dạy."
+      ],
+      "correct": 0
+    },
+    {
+      "id": 149,
+      "topicId": 6,
+      "title": "Trong môi trường học tập, việc không sử dụng các chất kích thích và không vi phạm pháp luật là quan trọng vì:",
+      "choices": [
+        "Chỉ là vấn đề cá nhân của sinh viên",
+        "Không ảnh hưởng đến hiệu suất học tập",
+        "Làm tăng hiệu suất học tập",
+        "Giúp duy trì môi trường học tập lành mạnh và an toàn"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 150,
+      "topicId": 6,
+      "title": "Văn hóa ứng xử trong trường đại học giúp sinh viên chuẩn bị cho cuộc sống sau khi ra trường bằng cách nào?",
+      "choices": [
+        "Chỉ giúp sinh viên có khả năng giao tiếp",
+        "Không có tác dụng gì đối với cuộc sống sau khi ra trường",
+        "Giúp sinh viên phát triển những kỹ năng cần thiết cho cuộc sống sau này",
+        "Chỉ giúp sinh viên đối phó với công việc"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 151,
+      "topicId": 6,
+      "title": "Tại sao việc đi học đúng giờ và tham gia đầy đủ các buổi học được coi là quy tắc ứng xử văn hóa quan trọng?",
+      "choices": [
+        "Để thầy cô yêu quý sinh viên hơn.",
+        "Để sinh viên có thời gian nghỉ giữa các buổi học.",
+        "Để thể hiện sự tôn trọng và hỗ trợ quá trình học tập.",
+        "Để sinh viên có thêm thời gian dành cho giải trí"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 152,
+      "topicId": 6,
+      "title": "Trường Đại học Hàng hải Việt Nam yêu cầu sinh viên mặc đồng phục trong những trường hợp nào sau đây?",
+      "choices": [
+        "Các ngày trong tuần từ thứ 2 đến thứ 5.",
+        "Trong toàn bộ đợt thi, kiểm tra học kỳ, bảo vệ bài tập lớn, đồ án, luận văn.",
+        "Khi đến trường liên hệ công việc hay tham gia các hội nghị, hội thảo, các hoạt động chung được triệu tập",
+        "Tất cả các trường hợp trên."
+      ],
+      "correct": 3
+    },
+    {
+      "id": 153,
+      "topicId": 6,
+      "title": "Văn hóa ứng xử của sinh viên Trường Đại học Hàng hải Việt Nam dựa trên các giá trị cốt lõi nào sau đây?",
+      "choices": [
+        "Chủ động, tự tin, tích cực",
+        "Tôn trọng, trách nhiệm, hợp tác",
+        "Trung thực, cởi mở, cởi mở",
+        "Tất cả các phương án trên"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 154,
+      "topicId": 6,
+      "title": "Mạng xã hội là gì?",
+      "choices": [
+        "Một loại trò chơi trực tuyến.",
+        "Một trang Web hoặc ứng dụng nền Web cho phép người dùng kết nối và tương tác với nhau.",
+        "Một ứng dụng di động để gọi điện thoại.",
+        "Một trò chơi bắn súng trực tuyến."
+      ],
+      "correct": 1
+    },
+    {
+      "id": 155,
+      "topicId": 6,
+      "title": "Loại mạng xã hội nào thường được sử dụng để kết nối chuyên nghiệp và tìm kiếm việc làm?",
+      "choices": [
+        "Instagram",
+        "Twitter",
+        "LinkedIn",
+        "WhatsApp"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 156,
+      "topicId": 6,
+      "title": "Điều gì là lợi ích của việc sử dụng mạng xã hội cho sinh viên?",
+      "choices": [
+        "Tạo ra môi trường an toàn",
+        "Giúp học thêm nhiều kiến thức",
+        "Chia sẻ thông tin và học hỏi, kết nối với bạn bè và gia đình, tìm việc làm và tham gia các hoạt động cộng đồng",
+        "Chỉ tạo cơ hội triển khai các dự án"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 157,
+      "topicId": 6,
+      "title": "Dưới đây, lưu ý nào là quan trọng khi sử dụng mạng xã hội cho sinh viên?",
+      "choices": [
+        "Sử dụng mạng xã hội một cách lạm dụng",
+        "Luôn tôn trọng người khác và không sử dụng ngôn ngữ tục tĩu, kích động bạo lực, phân biệt chủng tộc, tôn giáo, giới tính.",
+        "Chia sẻ số điện thoại và địa chỉ cá nhân",
+        "Chia sẻ thông tin cá nhân với tất cả mọi người"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 158,
+      "topicId": 6,
+      "title": "Để tránh bị lừa đảo trên mạng, bạn nên làm gì khi nhận tin nhắn yêu cầu chuyển tiền từ một người bạn?",
+      "choices": [
+        "Ngay lập tức chuyển tiền theo yêu cầu",
+        "Gọi điện thoại xác nhận với người bạn trước khi hành động",
+        "Tắt điện thoại và không trả lời",
+        "Thay đổi mật khẩu của mình"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 159,
+      "topicId": 6,
+      "title": "Khi bạn nhận được cuộc gọi từ một người giả danh nhân viên ngân hàng yêu cầu cung cấp thông tin tài khoản của bạn, bạn nên làm gì?",
+      "choices": [
+        "Cung cấp thông tin tài khoản ngay lập tức.",
+        "Ghi lại thông tin của người gọi và tắt điện thoại.",
+        "Yêu cầu họ gửi email xác nhận.",
+        "Gọi điện thoại xác nhận với ngân hàng."
+      ],
+      "correct": 3
+    },
+    {
+      "id": 160,
+      "topicId": 6,
+      "title": "Sinh viên cần cảnh giác với những điều gì để tránh bị lừa đảo trên mạng",
+      "choices": [
+        "Không chuyển tiền cho bất cứ ai khi chưa biết rõ họ.",
+        "Cơ quan nhà nước không làm việc qua điện thoại.",
+        "Tuyệt đối không cung cấp mã OTP cho bất kỳ ai.",
+        "Tất cả các nội dung trên."
+      ],
+      "correct": 3
+    },
+    {
+      "id": 161,
+      "topicId": 6,
+      "title": "Khi nhận được tin nhắn yêu cầu cung cấp mã OTP, bạn nên làm gì?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 162,
+      "topicId": 6,
+      "title": "Nếu bạn thấy một quảng cáo trên mạng về công việc nhẹ lương cao và yêu cầu bạn phải nộp tiền trước, bạn nên làm gì?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 163,
+      "topicId": 6,
+      "title": "Nếu bạn nhận được thông báo từ người giả danh nhân viên y tế yêu cầu chuyển tiền gấp để mổ cho người thân, bạn nên làm gì?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 164,
+      "topicId": 6,
+      "title": "Khi bạn nhận được lời mời tham gia một sàn giao dịch ảo và yêu cầu gửi tiền trước, bạn nên làm gì?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 165,
+      "topicId": 6,
+      "title": "Nếu bạn nhận được cuộc gọi đòi nợ từ người khủng bố, bạn nên làm gì?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 166,
+      "topicId": 6,
+      "title": "Khi bạn nhận được tin nhắn yêu cầu đóng thuế để nhận tiền từ nước ngoài, bạn nên làm gì?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 167,
+      "topicId": 6,
+      "title": "Nếu bạn nhận được cuộc gọi thông báo bạn đã trúng thưởng và yêu cầu đóng phí để nhận giải, bạn nên làm gì?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 168,
+      "topicId": 6,
+      "title": "Khi nhận được hướng dẫn từ người giả danh nhân viên ngân hàng yêu cầu cài đặt phần mềm, bạn nên làm gì?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 169,
+      "topicId": 6,
+      "title": "Sinh viên cần cảnh giác với những điều gì để tránh bị lừa đảo trên mạng",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 170,
+      "topicId": 6,
+      "title": "Khi bạn nhận được cuộc gọi từ một người giả danh nhân viên ngân hàng yêu cầu cung cấp thông tin tài khoản của bạn, bạn nên làm gì?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 171,
+      "topicId": 6,
+      "title": "Để tránh bị lừa đảo trên mạng, bạn nên làm gì khi nhận tin nhắn yêu cầu chuyển tiền từ một người bạn?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 172,
+      "topicId": 6,
+      "title": "Khi tham gia một cuộc thảo luận trên mạng xã hội, bạn nên chú ý điều gì để tránh gây xung đột?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 173,
+      "topicId": 6,
+      "title": "Khi nhận được một liên kết từ một người không quen biết trên mạng xã hội, bạn nên làm gì?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 174,
+      "topicId": 6,
+      "title": "Sử dụng mạng xã hội hợp lý bao gồm việc nào sau đây?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 175,
+      "topicId": 6,
+      "title": "Bạn nên làm gì khi chia sẻ thông tin cá nhân trên mạng xã hội để bảo vệ an toàn cá nhân?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 176,
+      "topicId": 6,
+      "title": "Dưới đây, lưu ý nào là quan trọng khi sử dụng mạng xã hội cho sinh viên?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 177,
+      "topicId": 6,
+      "title": "Điều gì là lợi ích của việc sử dụng mạng xã hội cho sinh viên?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 178,
+      "topicId": 6,
+      "title": "Loại mạng xã hội nào thường được sử dụng để kết nối chuyên nghiệp và tìm kiếm việc làm?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 179,
+      "topicId": 6,
+      "title": "Văn hóa ứng xử của sinh viên Trường Đại học Hàng hải Việt Nam dựa trên các giá trị cốt lõi nào sau đây?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 180,
+      "topicId": 6,
+      "title": "Trường Đại học Hàng hải Việt Nam yêu cầu sinh viên mặc đồng phục trong những trường hợp nào sau đây?",
+      "choices": [],
+      "correct": null
+    },
+    {
+      "id": 25,
+      "topicId": 5,
+      "title": "Văn hóa giao tiếp của sinh viên cần như thế nào?",
+      "choices": [
+        "Lịch sự",
+        "Tôn trọng",
+        "Thân thiện",
+        "Tất cả các điều trên"
+      ],
+      "correct": 3
+    }
+  ],
+  "progress": [
+    {
+      "id": 1,
+      "userId": 1,
+      "topicId": 1,
+      "topicTitle": "Chuyên đề 1: Đường lối, chính sách của Đảng",
+      "totalQuestions": 40,
+      "correctAnswers": 34,
+      "timeSpent": 38,
+      "timestamp": "2025-08-20T08:42:34.537Z",
+      "departmentId": 1
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "topicId": 1,
+      "topicTitle": "Chuyên đề 1: Đường lối, chính sách của Đảng",
+      "totalQuestions": 40,
+      "correctAnswers": 30,
+      "timeSpent": 42,
+      "timestamp": "2025-08-20T09:15:00.000Z",
+      "departmentId": 2
+    },
+    {
+      "userId": 1,
+      "topicId": 1,
+      "topicTitle": "Chuyên đề 1: Đường lối, chính sách của Đảng",
+      "totalQuestions": 5,
+      "correctAnswers": 2,
+      "timeSpent": 46,
+      "timestamp": "2025-08-20T11:01:14.612Z",
+      "departmentId": 1,
+      "id": 3
+    },
+    {
+      "userId": 3,
+      "topicId": 1,
+      "topicTitle": "Chuyên đề 1: Đường lối, chính sách của Đảng",
+      "totalQuestions": 5,
+      "correctAnswers": 0,
+      "timeSpent": 31,
+      "timestamp": "2025-08-20T11:04:15.707Z",
+      "departmentId": 1,
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "topicId": 1,
+      "topicTitle": "Chuyên đề Giáo dục chính trị",
+      "totalQuestions": 38,
+      "correctAnswers": 0,
+      "timeSpent": 35,
+      "timestamp": "2025-08-20T12:56:30.425Z",
+      "departmentId": 1,
+      "id": 5
+    },
+    {
+      "userId": 3,
+      "topicId": 1,
+      "savedAnswers": {
+        "1": 3
+      },
+      "completed": true,
+      "score": 0,
+      "timeSpent": 30,
+      "date": "2025-08-20T13:10:06.052Z",
+      "id": 6
+    },
+    {
+      "userId": 3,
+      "topicId": 1,
+      "savedAnswers": {},
+      "completed": false,
+      "score": 0,
+      "timeSpent": 0,
+      "date": "2025-08-20T13:11:42.804Z",
+      "id": 7
+    }
+  ],
+  "quiz_sessions": []
+}

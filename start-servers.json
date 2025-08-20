@@ -1,0 +1,13 @@
+{
+  "name": "start-servers",
+  "version": "1.0.0",
+  "scripts": {
+    "start-all": "concurrently \"npm run server\" \"npm start\"",
+    "server": "json-server --watch db.json --port 3002",
+    "client": "react-scripts start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

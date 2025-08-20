@@ -1,0 +1,52 @@
+/* Theme Transition Utilities */
+
+/* Smooth theme transitions */
+*,
+*::before,
+*::after {
+  transition: 
+    background-color var(--transition-duration) var(--transition-timing),
+    border-color var(--transition-duration) var(--transition-timing),
+    color var(--transition-duration) var(--transition-timing),
+    box-shadow var(--transition-duration) var(--transition-timing);
+}
+
+/* Prevent transitions during theme initialization */
+.theme-transition-disable * {
+  transition: none !important;
+}
+
+/* Theme loading state */
+.theme-loading {
+  visibility: hidden;
+}
+
+/* Ensure text remains visible during theme switch */
+.theme-switching {
+  font-display: swap;
+}
+
+/* High performance GPU acceleration for theme transitions */
+.theme-accelerated {
+  will-change: background-color, color, border-color;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Focus states that work across themes */
+.focus-ring:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+}
+
+/* Print styles override */
+@media print {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}

@@ -1,6 +1,52 @@
-#Node.js v14.17.0
+# VMU Quiz System - Maritime Theme
 
-# Getting Started with Create React App
+Hệ thống Quiz cho Sinh viên Hàng Hải với thiết kế chuyên nghiệp và hỗ trợ Light/Dark mode.
+
+## 🎨 Theme System
+
+### Chuyển đổi giao diện
+
+Ứng dụng hỗ trợ 3 chế độ giao diện:
+
+- **Light Mode**: Giao diện sáng với màu xanh biển chủ đạo
+- **Dark Mode**: Giao diện tối phù hợp cho môi trường ánh sáng yếu
+- **High Contrast**: Giao diện tương phản cao cho người khiếm thị
+
+### Cách sử dụng Theme Switcher
+
+1. Nhấn vào icon theme ở góc phải navbar
+2. Chọn chế độ mong muốn từ dropdown menu
+3. Thiết lập sẽ được lưu tự động và áp dụng cho lần truy cập tiếp theo
+
+### Tự động theo hệ thống
+
+Nếu không chọn theme cụ thể, ứng dụng sẽ tự động theo setting của hệ thống (`prefers-color-scheme`).
+
+## 🏗️ Kiến trúc Theme
+
+### Design System
+
+- **Base Tokens**: Màu sắc cơ bản (brand, accent, grayscale)
+- **Semantic Tokens**: Ánh xạ ngữ nghĩa (primary, secondary, text, background)
+- **Component Tokens**: Màu cho từng component cụ thể
+
+### Accessibility
+
+- Tuân thủ WCAG AA với contrast ratio ≥ 4.5:1 cho văn bản
+- Hỗ trợ keyboard navigation và screen readers
+- Responsive với reduced motion preferences
+
+### Files Structure
+
+```
+src/styles/
+├── tokens.css              # Design tokens và color system
+├── bootstrap-overrides.scss # Bootstrap customization
+├── globals.css             # Global styles và component theming
+└── QuizInterface.css       # Component-specific styles
+```
+
+## 🚀 Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
