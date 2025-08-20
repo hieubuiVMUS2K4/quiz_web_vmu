@@ -142,7 +142,7 @@ const UserDetailModal = ({ show, onHide, selectedUser, departments, onUserUpdate
                         <div className="d-flex align-items-center">
                           <i className="bi bi-envelope me-3 text-primary"></i>
                           <div>
-                            <small className="text-muted d-block">Email</small>
+                            <small style={{ color: 'var(--text)', opacity: 0.7 }} className="d-block">Email</small>
                             <strong>{selectedUser.email}</strong>
                           </div>
                         </div>
@@ -152,7 +152,7 @@ const UserDetailModal = ({ show, onHide, selectedUser, departments, onUserUpdate
                           <div className="d-flex align-items-center">
                             <i className="bi bi-card-text me-3 text-primary"></i>
                             <div>
-                              <small className="text-muted d-block">Mã sinh viên</small>
+                              <small style={{ color: 'var(--text)', opacity: 0.7 }} className="d-block">Mã sinh viên</small>
                               <strong>{selectedUser.studentId}</strong>
                             </div>
                           </div>
@@ -162,7 +162,7 @@ const UserDetailModal = ({ show, onHide, selectedUser, departments, onUserUpdate
                         <div className="d-flex align-items-center">
                           <i className="bi bi-building me-3 text-primary"></i>
                           <div>
-                            <small className="text-muted d-block">Khoa/Viện</small>
+                            <small style={{ color: 'var(--text)', opacity: 0.7 }} className="d-block">Khoa/Viện</small>
                             <strong>{getDepartmentName(selectedUser.departmentId)}</strong>
                           </div>
                         </div>
@@ -171,7 +171,7 @@ const UserDetailModal = ({ show, onHide, selectedUser, departments, onUserUpdate
                         <div className="d-flex align-items-center">
                           <i className="bi bi-circle-fill text-success me-3" style={{ fontSize: '0.8rem' }}></i>
                           <div>
-                            <small className="text-muted d-block">Trạng thái</small>
+                            <small style={{ color: 'var(--text)', opacity: 0.7 }} className="d-block">Trạng thái</small>
                             <strong className="text-success">Đang hoạt động</strong>
                           </div>
                         </div>

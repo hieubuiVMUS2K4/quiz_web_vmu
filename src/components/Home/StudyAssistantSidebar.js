@@ -124,18 +124,18 @@ const StudyAssistantSidebar = () => {
               <div className="col-6">
                 <div className="stat-box">
                   <h5 className="text-success mb-1 fw-bold">{completedTopics}</h5>
-                  <div className="small text-muted">Chuyên đề hoàn thành</div>
+                  <div className="small" style={{ color: 'var(--text)' }}>Chuyên đề hoàn thành</div>
                 </div>
               </div>
               <div className="col-6">
                 <div className="stat-box">
                   <h5 className="text-info mb-1 fw-bold">{Math.round(averageScore)}%</h5>
-                  <div className="small text-muted">Điểm trung bình</div>
+                  <div className="small" style={{ color: 'var(--text)' }}>Điểm trung bình</div>
                 </div>
               </div>
               <div className="col-12">
                 <div className="d-flex justify-content-between align-items-center mb-2">
-                  <span className="small fw-semibold">Tiến độ tổng thể</span>
+                  <span className="small fw-semibold" style={{ color: 'var(--text)' }}>Tiến độ tổng thể</span>
                   <span className="small fw-bold text-primary">{Math.round(completionRate)}%</span>
                 </div>
                 <ProgressBar 
@@ -163,7 +163,7 @@ const StudyAssistantSidebar = () => {
                 </div>
                 <div>
                   <h5 className="mb-1 fw-bold text-warning">{studyStreak}</h5>
-                  <div className="small text-muted">Ngày học liên tiếp</div>
+                  <div className="small" style={{ color: 'var(--text)', opacity: 0.7 }}>Ngày học liên tiếp</div>
                 </div>
               </div>
             </div>
@@ -186,20 +186,20 @@ const StudyAssistantSidebar = () => {
             </Card.Header>
             <Card.Body className="py-3">
               <h6 className="mb-2 fw-bold">{recommendedTopic.title}</h6>
-              <p className="small text-muted mb-3">{recommendedTopic.description}</p>
+              <p className="small mb-3" style={{ color: 'var(--text)', opacity: 0.7 }}>{recommendedTopic.description}</p>
               <div className="row g-2 mb-3">
                 <div className="col-6">
                   <div className="stat-box">
                     <i className="bi bi-question-circle text-primary d-block mb-1" style={{ fontSize: '1.2rem' }}></i>
                     <strong>{recommendedTopic.totalQuestions}</strong>
-                    <div className="small text-muted">câu hỏi</div>
+                    <div className="small" style={{ color: 'var(--text)', opacity: 0.7 }}>câu hỏi</div>
                   </div>
                 </div>
                 <div className="col-6">
                   <div className="stat-box">
                     <i className="bi bi-clock text-warning d-block mb-1" style={{ fontSize: '1.2rem' }}></i>
                     <strong>{recommendedTopic.timeLimit}</strong>
-                    <div className="small text-muted">phút</div>
+                    <div className="small" style={{ color: 'var(--text)', opacity: 0.7 }}>phút</div>
                   </div>
                 </div>
               </div>
@@ -251,19 +251,19 @@ const StudyAssistantSidebar = () => {
               <ul className="list-unstyled mb-0">
                 <li className="tip-item d-flex align-items-center">
                   <i className="bi bi-check2 text-success me-2" style={{ fontSize: '1rem' }}></i>
-                  <span className="small">Học đều đặn mỗi ngày</span>
+                  <span className="small" style={{ color: 'var(--text)' }}>Học đều đặn mỗi ngày</span>
                 </li>
                 <li className="tip-item d-flex align-items-center">
                   <i className="bi bi-check2 text-success me-2" style={{ fontSize: '1rem' }}></i>
-                  <span className="small">Ôn tập các chuyên đề khó</span>
+                  <span className="small" style={{ color: 'var(--text)' }}>Ôn tập các chuyên đề khó</span>
                 </li>
                 <li className="tip-item d-flex align-items-center">
                   <i className="bi bi-check2 text-success me-2" style={{ fontSize: '1rem' }}></i>
-                  <span className="small">Đặt mục tiêu đạt trên 80%</span>
+                  <span className="small" style={{ color: 'var(--text)' }}>Đặt mục tiêu đạt trên 80%</span>
                 </li>
                 <li className="tip-item d-flex align-items-center">
                   <i className="bi bi-check2 text-success me-2" style={{ fontSize: '1rem' }}></i>
-                  <span className="small">Nghỉ ngơi hợp lý</span>
+                  <span className="small" style={{ color: 'var(--text)' }}>Nghỉ ngơi hợp lý</span>
                 </li>
               </ul>
             </div>
@@ -349,7 +349,7 @@ const StudyAssistantSidebar = () => {
               {user?.name?.charAt(0)?.toUpperCase() || 'U'}
             </div>
             <h6 className="mb-2 fw-bold">{user?.name}</h6>
-            <small className="text-muted">{getUserDepartment()}</small>
+            <small style={{ color: 'var(--text)', opacity: 0.7 }}>{getUserDepartment()}</small>
           </Card.Body>
         </Card>
       </div>

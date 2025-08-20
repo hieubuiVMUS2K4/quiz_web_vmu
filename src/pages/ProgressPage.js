@@ -103,16 +103,16 @@ const ProgressPage = () => {
             </Card.Header>
             <Card.Body>
               <div className="mb-2">
-                <strong>Họ tên:</strong> {user?.name}
+                <strong style={{ color: 'var(--text)' }}>Họ tên:</strong> <span style={{ color: 'var(--text)' }}>{user?.name}</span>
               </div>
               <div className="mb-2">
-                <strong>Email:</strong> {user?.email}
+                <strong style={{ color: 'var(--text)' }}>Email:</strong> <span style={{ color: 'var(--text)' }}>{user?.email}</span>
               </div>
               <div className="mb-2">
-                <strong>Mã sinh viên:</strong> {user?.studentId || 'Chưa cập nhật'}
+                <strong style={{ color: 'var(--text)' }}>Mã sinh viên:</strong> <span style={{ color: 'var(--text)' }}>{user?.studentId || 'Chưa cập nhật'}</span>
               </div>
               <div>
-                <strong>Khoa/Viện:</strong> {getUserDepartment()}
+                <strong style={{ color: 'var(--text)' }}>Khoa/Viện:</strong> <span style={{ color: 'var(--text)' }}>{getUserDepartment()}</span>
               </div>
             </Card.Body>
           </Card>
@@ -126,8 +126,8 @@ const ProgressPage = () => {
             <Card.Body>
               <div className="mb-3">
                 <div className="d-flex justify-content-between mb-2">
-                  <span>Tiến độ hoàn thành:</span>
-                  <span className="fw-bold">{progressStats.completed}/{progressStats.total} chuyên đề</span>
+                  <span style={{ color: 'var(--text)' }}>Tiến độ hoàn thành:</span>
+                  <span className="fw-bold" style={{ color: 'var(--text)' }}>{progressStats.completed}/{progressStats.total} chuyên đề</span>
                 </div>
                 <ProgressBar 
                   now={progressStats.percentage} 
@@ -136,10 +136,10 @@ const ProgressPage = () => {
                 />
               </div>
               <div className="mb-2">
-                <strong>Tổng số bài đã làm:</strong> {progress.length}
+                <strong style={{ color: 'var(--text)' }}>Tổng số bài đã làm:</strong> <span style={{ color: 'var(--text)' }}>{progress.length}</span>
               </div>
               <div>
-                <strong>Chuyên đề đã hoàn thành:</strong> {progressStats.completed}
+                <strong style={{ color: 'var(--text)' }}>Chuyên đề đã hoàn thành:</strong> <span style={{ color: 'var(--text)' }}>{progressStats.completed}</span>
               </div>
             </Card.Body>
           </Card>

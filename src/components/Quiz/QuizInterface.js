@@ -462,7 +462,7 @@ const QuizInterface = () => {
               </div>
 
               <div className="pagination-controls mb-3">
-                <small className="text-muted d-block mb-2">
+                <small style={{ color: 'var(--text)', opacity: 0.7 }} className="d-block mb-2">
                   Trang {currentPage + 1}/{totalPages} ({questionsPerPage} câu/trang)
                 </small>
                 <div className="d-flex gap-2">

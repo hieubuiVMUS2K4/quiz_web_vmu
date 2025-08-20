@@ -54,7 +54,7 @@ const StudentDashboard = () => {
             <div className="d-flex justify-content-between align-items-center">
               <div>
                 <h2 className="mb-0 text-primary">{overall}%</h2>
-                <div className="text-muted">{passedTopics} / {topics.length} chuyên đề đã đạt</div>
+                <div style={{ color: 'var(--text)' }}>{passedTopics} / {topics.length} chuyên đề đã đạt</div>
               </div>
               <div style={{ width: 300 }}>
                 <ProgressBar 
@@ -81,18 +81,18 @@ const StudentDashboard = () => {
                         <i className="bi bi-book"></i>
                       </div>
                       <div className="text-end">
-                        <small className="text-muted">
+                        <small style={{ color: 'var(--text)', opacity: 0.7 }}>
                           <i className="bi bi-clock me-1"></i>
                           {t.timeLimit} phút
                         </small>
                       </div>
                     </div>
                     <h6 className="mb-2 topic-title">{t.title}</h6>
-                    <p className="text-muted small mb-3" style={{ fontSize: '0.85rem' }}>
+                    <p className="small mb-3" style={{ fontSize: '0.85rem', color: 'var(--text)', opacity: 0.7 }}>
                       {t.description}
                     </p>
                     <div className="d-flex justify-content-between align-items-center">
-                      <small className="text-muted">
+                      <small style={{ color: 'var(--text)', opacity: 0.7 }}>
                         <i className="bi bi-question-circle me-1"></i>
                         {t.totalQuestions} câu hỏi
                       </small>

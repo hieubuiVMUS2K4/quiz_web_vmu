@@ -306,7 +306,7 @@ const UsersPage = () => {
                 <Card className="text-center">
                   <Card.Body>
                     <h3 className="text-primary">{users.length}</h3>
-                    <small className="text-muted">Tổng người dùng</small>
+                    <small style={{ color: 'var(--text)', opacity: 0.7 }}>Tổng người dùng</small>
                   </Card.Body>
                 </Card>
               </Col>
@@ -316,7 +316,7 @@ const UsersPage = () => {
                     <h3 className="text-success">
                       {users.filter(u => u.role === 'user').length}
                     </h3>
-                    <small className="text-muted">Sinh viên</small>
+                    <small style={{ color: 'var(--text)', opacity: 0.7 }}>Sinh viên</small>
                   </Card.Body>
                 </Card>
               </Col>
@@ -326,7 +326,7 @@ const UsersPage = () => {
                     <h3 className="text-danger">
                       {users.filter(u => u.role === 'admin').length}
                     </h3>
-                    <small className="text-muted">Quản trị viên</small>
+                    <small style={{ color: 'var(--text)', opacity: 0.7 }}>Quản trị viên</small>
                   </Card.Body>
                 </Card>
               </Col>
@@ -336,7 +336,7 @@ const UsersPage = () => {
                     <h3 className="text-info">
                       {new Set(users.map(u => u.departmentId).filter(Boolean)).size}
                     </h3>
-                    <small className="text-muted">Khoa/Viện</small>
+                    <small style={{ color: 'var(--text)', opacity: 0.7 }}>Khoa/Viện</small>
                   </Card.Body>
                 </Card>
               </Col>
@@ -358,7 +358,7 @@ const UsersPage = () => {
                 </Form.Select>
               </Col>
               <Col md={8}>
-                <div className="text-muted small">
+                <div className="small" style={{ color: 'var(--text)', opacity: 0.7 }}>
                   Hiển thị {filteredUsers.length} / {users.length} người dùng
                 </div>
               </Col>

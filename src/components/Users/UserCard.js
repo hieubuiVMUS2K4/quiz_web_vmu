@@ -38,7 +38,7 @@ const UserCard = ({ user, department, showDetails = true, onClick, isClickable =
         </div>
 
         {showDetails && (
-          <div className="small text-muted">
+          <div className="small" style={{ color: 'var(--text)', opacity: 0.7 }}>
             <Row className="g-2">
               <Col xs={12}>
                 <div className="d-flex align-items-center">

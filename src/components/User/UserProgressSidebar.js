@@ -41,22 +41,22 @@ const UserProgressSidebar = ({ progress = [], totalTopics = 9 }) => {
       {/* Overall progress */}
       <Card className="mb-4 shadow-sm">
         <Card.Body>
-          <h6 className="text-muted mb-2">Tổng tiến độ</h6>
+          <h6 style={{ color: 'var(--text)' }} className="mb-2">Tiến độ tổng thể</h6>
           <ProgressBar
             now={overallProgress}
             variant={overallProgress >= 100 ? 'success' : 'primary'}
             className="mb-2"
           />
-          <small className="text-muted">
+          <small style={{ color: 'var(--text)', opacity: 0.7 }}>
             Hoàn thành {completedTopics}/{totalTopics} chuyên đề
           </small>
         </Card.Body>
       </Card>
 
       {/* Recent attempts */}
-      <h6 className="mb-3">Lần làm gần đây</h6>
+      <h6 className="mb-3" style={{ color: 'var(--text)' }}>Lần làm gần đây</h6>
       {recentAttempts.length === 0 && (
-        <small className="text-muted">Chưa có lần làm nào.</small>
+        <small style={{ color: 'var(--text)', opacity: 0.7 }}>Chưa có lần làm nào.</small>
       )}
       {recentAttempts.map((p) => {
         const total = p.totalQuestions || 0;
@@ -66,16 +66,16 @@ const UserProgressSidebar = ({ progress = [], totalTopics = 9 }) => {
           <Card key={p.id || `${p.userId}-${p.topicId}-${p.timestamp}`} className="mb-2 shadow-sm">
             <Card.Body className="p-3">
               <div className="d-flex justify-content-between align-items-center mb-2">
-                <small className="text-muted">Chuyên đề {p.topicId}</small>
+                <small style={{ color: 'var(--text)', opacity: 0.7 }}>Chuyên đề {p.topicId}</small>
                 <Badge bg={score >= 80 ? 'success' : 'warning'}>
                   {score}%
                 </Badge>
               </div>
               <div className="d-flex justify-content-between">
-                <small className="text-muted">
+                <small style={{ color: 'var(--text)', opacity: 0.7 }}>
                   {correct}/{total} câu
                 </small>
-                <small className="text-muted">
+                <small style={{ color: 'var(--text)', opacity: 0.7 }}>
                   {p.timeSpent ?? '—'} phút
                 </small>
               </div>

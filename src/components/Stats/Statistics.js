@@ -44,23 +44,23 @@ const Statistics = () => {
         <Card.Body>
           <Row>
             <Col md={4} className="text-center border-end">
-              <h6 className="text-muted mb-2">Hoàn thành</h6>
+              <h6 style={{ color: 'var(--text)', opacity: 0.7 }} className="mb-2">Hoàn thành</h6>
               <h2 className="mb-0">{completedTopics}/9</h2>
-              <small className="text-muted">chuyên đề</small>
+              <small style={{ color: 'var(--text)', opacity: 0.7 }}>chuyên đề</small>
             </Col>
             <Col md={4} className="text-center border-end">
-              <h6 className="text-muted mb-2">Tiến độ tổng thể</h6>
+              <h6 style={{ color: 'var(--text)', opacity: 0.7 }} className="mb-2">Tiến độ tổng thể</h6>
               <h2 className="mb-0">{overallProgress.toFixed(1)}%</h2>
-              <small className="text-muted">hoàn thành</small>
+              <small style={{ color: 'var(--text)', opacity: 0.7 }}>hoàn thành</small>
             </Col>
             <Col md={4} className="text-center">
-              <h6 className="text-muted mb-2">Trạng thái</h6>
+              <h6 style={{ color: 'var(--text)', opacity: 0.7 }} className="mb-2">Trạng thái</h6>
               <h2 className="mb-0">
                 <Badge bg={completedTopics === 9 ? "success" : "warning"}>
                   {completedTopics === 9 ? "PASSED" : "IN PROGRESS"}
                 </Badge>
               </h2>
-              <small className="text-muted">cần hoàn thành 9/9</small>
+              <small style={{ color: 'var(--text)', opacity: 0.7 }}>cần hoàn thành 9/9</small>
             </Col>
           </Row>
         </Card.Body>
@@ -115,7 +115,7 @@ const Statistics = () => {
                   </td>
                   <td>
                     {lastAttempt ? (
-                      <small className="text-muted">
+                      <small style={{ color: 'var(--text)', opacity: 0.7 }}>
                         <i className="bi bi-clock-history me-1"></i>
                         {lastAttempt.toLocaleString()}
                       </small>

@@ -127,7 +127,7 @@ const AdminDashboard = () => {
         <Col md={4}>
           <Card className="h-100">
             <Card.Body>
-              <h6 className="text-muted mb-2">Tổng số sinh viên</h6>
+              <h6 style={{ color: 'var(--text)', opacity: 0.7 }} className="mb-2">Tổng số sinh viên</h6>
               <h3>{totalStudents}</h3>
               <div className="text-success">
                 <i className="bi bi-people-fill me-1"></i>
@@ -139,7 +139,7 @@ const AdminDashboard = () => {
         <Col md={4}>
           <Card className="h-100">
             <Card.Body>
-              <h6 className="text-muted mb-2">Sinh viên đã hoàn thành</h6>
+              <h6 style={{ color: 'var(--text)', opacity: 0.7 }} className="mb-2">Sinh viên đã hoàn thành</h6>
               <h3>{passedStudents}</h3>
               <div className="text-primary">
                 <i className="bi bi-check-circle-fill me-1"></i>
@@ -151,7 +151,7 @@ const AdminDashboard = () => {
         <Col md={4}>
           <Card className="h-100">
             <Card.Body>
-              <h6 className="text-muted mb-2">Tỷ lệ hoàn thành</h6>
+              <h6 style={{ color: 'var(--text)', opacity: 0.7 }} className="mb-2">Tỷ lệ hoàn thành</h6>
               <h3>{totalStudents ? ((passedStudents / totalStudents) * 100).toFixed(1) : '0.0'}%</h3>
               <div className="text-info">
                 <i className="bi bi-graph-up-arrow me-1"></i>

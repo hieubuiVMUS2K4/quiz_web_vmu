@@ -84,13 +84,13 @@ const UserProfile = ({ department }) => {
           <Row>
             <Col md={8}>
               <dl className="row">
-                <dt className="col-sm-3">Họ tên:</dt>
-                <dd className="col-sm-9">{user.name}</dd>
+                <dt className="col-sm-3" style={{ color: 'var(--text)' }}>Họ tên:</dt>
+                <dd className="col-sm-9" style={{ color: 'var(--text)' }}>{user.name}</dd>
                 
-                <dt className="col-sm-3">Email:</dt>
-                <dd className="col-sm-9">{user.email}</dd>
+                <dt className="col-sm-3" style={{ color: 'var(--text)' }}>Email:</dt>
+                <dd className="col-sm-9" style={{ color: 'var(--text)' }}>{user.email}</dd>
                 
-                <dt className="col-sm-3">Vai trò:</dt>
+                <dt className="col-sm-3" style={{ color: 'var(--text)' }}>Vai trò:</dt>
                 <dd className="col-sm-9">
                   <Badge bg={user.role === 'admin' ? 'danger' : 'primary'}>
                     {user.role === 'admin' ? 'Quản trị viên' : 'Sinh viên'}
@@ -99,15 +99,15 @@ const UserProfile = ({ department }) => {
                 
                 {user.studentId && (
                   <>
-                    <dt className="col-sm-3">Mã sinh viên:</dt>
-                    <dd className="col-sm-9">{user.studentId}</dd>
+                    <dt className="col-sm-3" style={{ color: 'var(--text)' }}>Mã sinh viên:</dt>
+                    <dd className="col-sm-9" style={{ color: 'var(--text)' }}>{user.studentId}</dd>
                   </>
                 )}
                 
                 {department && (
                   <>
-                    <dt className="col-sm-3">Khoa/Viện:</dt>
-                    <dd className="col-sm-9">{department}</dd>
+                    <dt className="col-sm-3" style={{ color: 'var(--text)' }}>Khoa/Viện:</dt>
+                    <dd className="col-sm-9" style={{ color: 'var(--text)' }}>{department}</dd>
                   </>
                 )}
               </dl>

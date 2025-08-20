@@ -6,13 +6,14 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(145deg, #ffffff, #f8f9fa);
+  background: linear-gradient(145deg, var(--surface), var(--bg-muted));
+  border: 1px solid var(--border);
 }
 
 .topic-card:hover {
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
-  border-color: #007bff !important;
+  border-color: var(--primary) !important;
 }
 
 .topic-card::before {
@@ -22,7 +23,7 @@
   left: -100%;
   width: 100%;
   height: 4px;
-  background: linear-gradient(90deg, #007bff, #0056b3, #007bff);
+  background: linear-gradient(90deg, var(--primary), var(--primary-hover), var(--primary));
   transition: left 0.5s ease;
   z-index: 1;
 }
@@ -38,7 +39,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, transparent, rgba(0, 123, 255, 0.05), transparent);
+  background: linear-gradient(45deg, transparent, rgba(31, 119, 180, 0.05), transparent);
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
@@ -46,6 +47,22 @@
 
 .topic-card:hover::after {
   opacity: 1;
+}
+
+/* Topic card text colors */
+.topic-card .card-title {
+  color: var(--text) !important;
+  font-weight: 600;
+}
+
+.topic-card .card-text {
+  color: var(--text) !important;
+  opacity: 0.8;
+}
+
+.topic-card .text-muted {
+  color: var(--text) !important;
+  opacity: 0.7;
 }
 
 .topic-card:hover .topic-icon {
